@@ -105,6 +105,35 @@ Desenvolver um projeto completo de machine learning capaz de:
 ### 🟩 Tela inicial do app
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0f194369-0ab5-4f97-862d-cf462e32cd0b" alt="img" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/55fae0d8-3c6c-4455-b7c1-4e07b5198ccb" alt="img" width="1000"/>
 </p>
 
+***
+
+<br>
+
+### 🟩 Após upload do arquivo .csv
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e2e7baaf-ddfb-40ef-a869-bf0199f7204a" alt="img" width="1000"/>
+</p>
+
+***
+
+<br>
+
+### 🟩 Gerando previsões
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f3eb135e-a6e3-407c-af8e-44cd0e9a689c" alt="img" width="1000"/>
+</p>
+
+***
+
+<br>
+
+### 🟩 Previsão pronta para baixar
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2c248359-f106-45eb-9a0f-fe5af234f9ac" alt="img" width="1000"/>
+</p>
