@@ -1,8 +1,9 @@
 <h1 align="center"> Expansão de Rede de Lojas </h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/35866b23-4a80-4caf-90ba-012eb87cdfa2" alt="img" width="1100"/>
+  <img src="https://github.com/user-attachments/assets/4f9c27da-15be-4d62-93f1-f9f8f74e1254" alt="img" width="1100"/>
 </p>
+
 
 
 <br>
