@@ -144,5 +144,5 @@ Desenvolver um projeto completo de machine learning capaz de:
 
 ### 🟩 Arquivo final
 Em anexo, está arquivo gerado com as previsões: *previsoes_churn.xlsx*. A coluna **CHURN_PREVISTO** contém as previsões, sendo:
-- 0 = não churn
-- 1 = Churn
+- **0 =** Não churn
+- **1 =** Churn
