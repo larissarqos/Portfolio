@@ -1,4 +1,4 @@
-<h1 align="center"> Organizador de Arquivos com Interface Gráfica </h1>
+<h1 align="center"> Organizador de Arquivos </h1>
 
 <br>
 
@@ -93,6 +93,13 @@ Ideal para usuários que não querem usar terminal.
 ### 🟩 Depois da Execução (organização por tipo de arquivo)
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8bcea14d-8515-4316-82a8-242469e6deea" alt="img" width="700"/>
+</p>
+
+--
+
+### 🟩 Depois da Execução (organização por data)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7a8c2f2a-895d-436f-bb4c-3487a160f191" alt="img" width="700"/>
 </p>
 
 
