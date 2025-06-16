@@ -3,9 +3,8 @@
 <h1 align="center">Projeto de Previsão de Churn</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/4aeec83c-5223-47f3-a87a-7426b0b2a6a9" alt="img" width="1100"/>
+  <img src="https://github.com/user-attachments/assets/5f0649ed-982e-4bbc-9807-e7c64eab272c" alt="img" width="1100"/>
 </p>
-
 
 <br>
 
