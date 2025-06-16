@@ -1,9 +1,8 @@
 <h1 align="center"> Análise de Performance e Satisfação de Colaboradores</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/baf49498-43c9-4e4f-b2c7-62f23e2ce282" alt="img" width="1100"/>
+  <img src="https://github.com/user-attachments/assets/e2972ec8-ad68-423f-9563-f97916d0cbd7" alt="img" width="1100"/>
 </p>
-
 
 <br>
 
