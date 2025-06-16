@@ -42,7 +42,7 @@ A interface é simples e direta:
 <br>
 
 ## 📍 Funcionalidades
-### 📌 Organizar por tipo de arquivo*
+### 📌 Organizar por tipo de arquivo
 Cria pastas para organizar os arquivos de acordo com a extensão, sendo:
 - **Images:** .jpg, .png, .jpeg, .gif, .webp
 - **Videos:** .mp4, .mkv, .mov, .flv
@@ -85,14 +85,14 @@ Ideal para usuários que não querem usar terminal.
 
 ### 🟩 Antes da Execução (organização por tipo de arquivo)
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5085441e-cb6d-46d5-93bf-f6fee8943294" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/5085441e-cb6d-46d5-93bf-f6fee8943294" alt="img" width="700"/>
 </p>
 
 --
 
 ### 🟩 Depois da Execução (organização por tipo de arquivo)
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8bcea14d-8515-4316-82a8-242469e6deea" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/8bcea14d-8515-4316-82a8-242469e6deea" alt="img" width="700"/>
 </p>
 
 
