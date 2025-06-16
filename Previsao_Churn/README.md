@@ -105,7 +105,7 @@ Desenvolver um projeto completo de machine learning capaz de:
 ### 🟩 Tela inicial do app
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55fae0d8-3c6c-4455-b7c1-4e07b5198ccb" alt="img" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/55fae0d8-3c6c-4455-b7c1-4e07b5198ccb" alt="img" width="800"/>
 </p>
 
 ***
@@ -115,7 +115,7 @@ Desenvolver um projeto completo de machine learning capaz de:
 ### 🟩 Após upload do arquivo .csv
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e2e7baaf-ddfb-40ef-a869-bf0199f7204a" alt="img" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/e2e7baaf-ddfb-40ef-a869-bf0199f7204a" alt="img" width="800"/>
 </p>
 
 ***
@@ -125,7 +125,7 @@ Desenvolver um projeto completo de machine learning capaz de:
 ### 🟩 Gerando previsões
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f3eb135e-a6e3-407c-af8e-44cd0e9a689c" alt="img" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/f3eb135e-a6e3-407c-af8e-44cd0e9a689c" alt="img" width="800"/>
 </p>
 
 ***
@@ -135,5 +135,14 @@ Desenvolver um projeto completo de machine learning capaz de:
 ### 🟩 Previsão pronta para baixar
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2c248359-f106-45eb-9a0f-fe5af234f9ac" alt="img" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/2c248359-f106-45eb-9a0f-fe5af234f9ac" alt="img" width="800"/>
 </p>
+
+***
+
+<br>
+
+### 🟩 Arquivo final
+Em anexo, está arquivo gerado com as previsões: *previsoes_churn.xlsx*. A coluna **CHURN_PREVISTO** contém as previsões, sendo:
+- 0 = não churn
+- 1 = Churn
