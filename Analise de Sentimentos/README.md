@@ -114,7 +114,7 @@ Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuv
 
 ### 🟩 Após inserção do arquivo
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/43b2144f-5790-4a90-b047-18a0dd67874" alt="img" width="800"/>
+  <img src="https://github.com/user-attachments/assets/52d9aae6-432b-4597-b663-b15fc26e946f" alt="img" width="800"/>
 </p>
 
 -- 
