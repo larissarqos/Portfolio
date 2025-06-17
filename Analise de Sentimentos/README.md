@@ -1,7 +1,7 @@
 <h1 align="center">Análise de Satisfação de Clientes de E-commerce</h1>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5f0649ed-982e-4bbc-9807-e7c64eab272c" alt="img" width="1100"/>
+  <img src="https://github.com/user-attachments/assets/16ef9636-8525-4d00-ac6f-6f9c75cb2a87" alt="img" width="1100"/>
 </p>
 
 <br>
