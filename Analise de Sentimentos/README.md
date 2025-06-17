@@ -85,6 +85,7 @@ Após a remoção de valores nulos, temos que cerca de 9.000 avaliações com 1 
 
 **Palavras por comentário**  
 A maioria dos comentários tem **até 10 palavras, com pico no intervalo 2-5 palavras**. Como vimos nos trigramas, 3 palavras já são suficientes para entender o sentimento do cliente. Seria interessante, na seção de avaliações, **pedir um mínimo de 5 palavras para estimar o cliente a deixar seu comentário**, mesmo que curto.
+
 --
 
 **Acurácia do Modelo**  
