@@ -107,21 +107,21 @@ Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuv
 ### 🟩 Tela - Gerar nuvem de palavras
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0d613918-de8f-48cd-9a9e-b16303a9801b" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/0d613918-de8f-48cd-9a9e-b16303a9801b" alt="img" width="800"/>
 </p>
 
 --
 
 ### 🟩 Após inserção do arquivo
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/43b2144f-5790-4a90-b047-18a0dd67874" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/43b2144f-5790-4a90-b047-18a0dd67874" alt="img" width="800"/>
 </p>
 
 -- 
 
 ### 🟩 Nuvem Gerada
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/62b75633-7084-4924-8f25-35818ee9d945" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/62b75633-7084-4924-8f25-35818ee9d945" alt="img" width="800"/>
 </p>
 
 <br>
@@ -130,19 +130,19 @@ Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuv
 
 ### 🟩 Tela - Análise de sentimento em comentário
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c5aea59d-3c91-4944-b175-a3075974576e" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/c5aea59d-3c91-4944-b175-a3075974576e" alt="img" width="800"/>
 </p>
 
 --
 
 ### 🟩 Resultado Positivo
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/db9e9c44-6b67-47b2-8482-3f42c7771788" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/db9e9c44-6b67-47b2-8482-3f42c7771788" alt="img" width="800"/>
 </p>
 
 --
 
 ### 🟩 Resultado Negativo
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f77ecca0-bdef-4564-bf41-5e6f7decfcef" alt="img" width="600"/>
+  <img src="https://github.com/user-attachments/assets/f77ecca0-bdef-4564-bf41-5e6f7decfcef" alt="img" width="800"/>
 </p>
