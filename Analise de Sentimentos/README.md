@@ -15,7 +15,7 @@ Este projeto tem como objetivo analisar os comentários dos clientes em uma plat
 
 ## 🛠️ Ferramentas e Tecnologias Utilizadas
 **Python**
-- ***Manipulação e análise de dados -** Pandas, Numpy
+- **Manipulação e análise de dados -** Pandas, Numpy
 - **Visualização -** Matplotlib, Seaborn
 - **Processamento de texto -** nltk, re, wordcloud
 - **Machine Learning -** scikit-learn (Logistic Regression, Random Forest)
