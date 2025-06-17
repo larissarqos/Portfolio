@@ -69,6 +69,10 @@ Desenvolver um projeto completo de machine learning, com interface amigável par
 - Geração de nuvem de palavras a partir de arquivo .csv com avaliações
 - Análise de sentimento com base em comentário, retornando sentimento previsto (Positivo ou Negativo)
 
+***
+
+<br>
+
 ## 📋 Principais Conclusões
 **Satisfação**  
 De acordo com os unigramas e e trigramas, podemos afirmar que a **maioria dos clientes ficou satisfeita com o serviço de entrega e qualidade dos produtos**.  
