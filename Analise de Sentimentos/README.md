@@ -69,16 +69,45 @@ Desenvolver um projeto completo de machine learning, com interface amigável par
 - Geração de nuvem de palavras a partir de arquivo .csv com avaliações
 - Análise de sentimento com base em comentário, retornando sentimento previsto (Positivo ou Negativo)
 
-## Principais Conclusões
-Aproximadamente 58% dos clientes não deixaram comentários.
+## 📋 Principais Conclusões
+**Satisfação**  
+De acordo com os unigramas e e trigramas, podemos afirmar que a **maioria dos clientes ficou satisfeita com o serviço de entrega e qualidade dos produtos**.  
+De maneira geral, a maior das avaliações (positivas e negativas) são relativas à entrega e qualidade dos produtos. Focar na agilidade de entrega pode ser um ponto crucial.
 
-Apenas 11% das avaliações possuem título.
+--
 
-O modelo de Regressão Logística apresentou bons resultados na classificação de sentimentos.
+**Comentários**  
+Após a remoção de valores nulos, temos que cerca de 9.000 avaliações com 1 estrela e pouco mais de 20.000 com 5 estrelas, o que indica:
+- Aproximadamente **36% dos clientes que deram 5 estrelas escreveram um comentário**.
+- Aproximadamente **77% dos clientes que deram 1 estrela escrevem um comentário**. Um cliente é mais propenso a comentar quando está insatisfeito com o produto.
 
-Os bigramas e trigramas mais frequentes indicam tendências sobre o que agrada ou desagrada os clientes (ex: "produto de qualidade", "entrega atrasada", etc.).
+--
 
+**Palavras por comentário**  
+A maioria dos comentários tem **até 10 palavras, com pico no intervalo 2-5 palavras**. Como vimos nos trigramas, 3 palavras já são suficientes para entender o sentimento do cliente. Seria interessante, na seção de avaliações, **pedir um mínimo de 5 palavras para estimar o cliente a deixar seu comentário**, mesmo que curto.
+--
+
+**Acurácia do Modelo**  
+Nosso modelo obteve quase 95% de acurácia
+
+***
+
+<br>
 
 ## ✅ Produto Final
+Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuvem de palavras e analisar comentário como positivo ou negativo.
 
-### 🟩 Tela inicial do app
+<br>
+
+### 🟩 Tela - Gerar nuvem de palavras
+
+### 🟩 Nuvem Gerada
+
+<br>
+
+-- 
+### 🟩 Tela - Análise de sentimento em comentário
+
+### 🟩 Resultado Positivo
+
+### 🟩 Resultado Negativo
