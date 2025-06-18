@@ -7,7 +7,7 @@
 <br>
 
 ## 📃 Contexto
-Este projeto tem como objetivo analisar os comentários dos clientes em uma plataforma de e-commerce para identificar o sentimento (positivo ou negativo) associado a cada avaliação. A análise de sentimentos permite extrair insights relevantes sobre a experiência dos usuários e auxilia na tomada de decisões para melhorar o atendimento, os produtos e os processos da empresa.
+Este projeto tem como objetivo aplicar técnicas de Processamento de Linguagem Natural (PLN) e Machine Learning para identificar o sentimento dos clientes a partir de suas avaliações em uma plataforma de e-commerce.
 
 ***
 
@@ -20,91 +20,98 @@ Este projeto tem como objetivo analisar os comentários dos clientes em uma plat
 - **Processamento de texto -** nltk, re, wordcloud
 - **Machine Learning -** scikit-learn (Logistic Regression, Random Forest)
 - **Deploy -** – Streamlit
-  
-***
-
-<br>
-
-🎯 Objetivo
-Desenvolver um projeto completo de machine learning, com interface amigável para o usuário final capaz de:
-- Através de arquivo .csv com comentários, gerar nuvem com principais palavras das avaliações dos clientes, dando uma visão rápida da opinião deles sobre os produtos.
-- Avaliar automaticamente avaliações escritas, indicando se é positiva ou negativa, utilizando técnicas de Processamento de Linguagem Natural (PLN) e Machine Learning.
 
 ***
 
 <br>
 
-## 🧱 Estrutura do Projeto
+## 📋 Metodologia: CRISP-DM
 
-#### 🔸 Entendimento e Análise Exploratória dos Dados
-#### 🔸 Pré-processamento
-#### 🔸 Modelagem
-#### 🔸 Deploy com Streamlit
-#### 🔸 Produto Final
-
-<br>
-
-### 📌 Entendimento e Análise Exploratória dos Dados
-- Importação e análise exploratória dos dados
-- Leitura de dados de avaliações de clientes
-- Estatísticas sobre a quantidade de avaliações com ou sem comentários e títulos, distribuição de score
-
---
-
-### 📌 Pré-processamento
-- Limpeza dos textos (remoção de stopwords, tokenização, etc.)
-- Vetorização com CountVectorizer e TF-IDF
-- Visualizações com geração de nuvem de palavras (WordCloud)
-
---
-
-### 📌 Modelagem
-- Treinamento e avaliação de modelos (Regressão Logística e Random Forest)
-- Métricas: Acurácia, F1-Score, Matriz de Confusão
-
---
-
-###  📌 Deploy com Streamlit
-- Interface interativa
-- Geração de nuvem de palavras a partir de arquivo .csv com avaliações
-- Análise de sentimento com base em comentário, retornando sentimento previsto (Positivo ou Negativo)
+A estrutura do projeto segue a metodologia CRISP-DM (Cross Industry Standard Process for Data Mining), composta por 6 etapas:
+  1. Entendimento do Negócio
+  2. Entendimento dos Dados
+  3. Preparação dos Dados
+  4. Modelagem
+  5. Avaliação do Modelo
+  6. Deploy
 
 ***
 
 <br>
 
-## 📋 Principais Conclusões
-**Satisfação**  
-De acordo com os unigramas e e trigramas, podemos afirmar que a **maioria dos clientes ficou satisfeita com o serviço de entrega e qualidade dos produtos**.  
-De maneira geral, a maior das avaliações (positivas e negativas) são relativas à entrega e qualidade dos produtos. Focar na agilidade de entrega pode ser um ponto crucial.
+### 📌 Entendimento do Negócio
+O objetivo principal é **classificar avaliações de clientes como positivas ou negativas**, utilizando o texto fornecido nos comentários. Os insights extraídos servirão para:
 
---
+- Identificar fatores de satisfação e insatisfação.
+- Apoiar decisões de melhoria de produto e serviço.
+- Automatizar o monitoramento de reputação da marca.
 
-**Comentários**  
-Após a remoção de valores nulos, temos que cerca de 9.000 avaliações com 1 estrela e pouco mais de 20.000 com 5 estrelas, o que indica:
-- Aproximadamente **36% dos clientes que deram 5 estrelas escreveram um comentário**.
-- Aproximadamente **77% dos clientes que deram 1 estrela escrevem um comentário**. Um cliente é mais propenso a comentar quando está insatisfeito com o produto.
+---
 
---
+### 📌 Entendimento dos Dados
+O conjunto de dados contém informações sobre:
+- Avaliações de clientes.
+- Títulos e textos dos comentários.
+- Notas atribuídas (de 1 a 5 estrelas).
 
-**Palavras por comentário**  
-A maioria dos comentários tem **até 10 palavras, com pico no intervalo 2-5 palavras**. Como vimos nos trigramas, 3 palavras já são suficientes para entender o sentimento do cliente. Seria interessante, na seção de avaliações, **pedir um mínimo de 5 palavras para estimar o cliente a deixar seu comentário**, mesmo que curto.
+Durante a exploração inicial, observamos:
 
---
+- Muitos valores ausentes em comentários e títulos.
+- Apenas 41% dos clientes deixaram algum texto.
+- Clientes insatisfeitos (nota 1) tendem mais a comentar do que os satisfeitos (nota 5).
 
-**Acurácia do Modelo**  
-Nosso modelo obteve quase 95% de acurácia
+---
 
-***
+## 📌 Preparação dos Dados
+
+As principais etapas de limpeza e preparação foram:
+
+- Remoção de valores nulos.
+- Redefinição de índices.
+- Tokenização e vetorização de textos com `CountVectorizer`.
+- Geração de unigramas e trigramas para análise de frequência.
+- Criação de variável alvo binária com base nas notas de score: Notas 4 e 5 = 1, Positivo; Notas 1 e 2 = 0, Negativo.
+
+---
+
+## 📌 Modelagem
+
+- Modelo escolhido: **Regressão Logística**
+- Vetorização dos dados com `CountVectorizer`.
+- Separação entre treino e teste.
+- Treinamento da máquina preditiva com os textos processados.
+
+---
+
+## 📌 Avaliação
+
+Avaliação do modelo com as seguintes métricas:
+
+- **Acurácia:** 92.85%
+- **F1 Score:** 95.00%
+- **Matriz de Confusão:**
+
+  ```
+  [[1860  307]
+   [ 228 5089]]
+  ```
+
+**O que isso significa?** 
+O modelo apresenta excelente desempenho, com precisão de previsões e recall equilibrados. Erra um pouco mais ao ao confundir uma frase negativa como se fosse positiva. Sujeito a melhorias futuras com aplicação de outros algortimos, como Random Forest ou SVM.
+ Erra mais ao confundir uma frase negativa como se fosse positiva (o que pode ser um problema, dependendo do seu uso final).
+ 
+---
+
+## 📌 Deploy
+O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite:
+- Gerar de nuvem de palavras a partir de arquivo .csv com avaliações, permitindo uma visão rápida dos principais pontos comentados em novas avaliações.
+- Análise de sentimento com base em comentário, retornando sentimento previsto (Positivo ou Negativo).
 
 <br>
 
-## ✅ Produto Final
-Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuvem de palavras e analisar comentário como positivo ou negativo.
+### Prints do produto final:
 
-<br>
-
-### 🟩 Tela - Gerar nuvem de palavras
+### 🟩 Opção gerar nuvem de palavras
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0d613918-de8f-48cd-9a9e-b16303a9801b" alt="img" width="800"/>
@@ -128,7 +135,7 @@ Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuv
 
 -- 
 
-### 🟩 Tela - Análise de sentimento em comentário
+### 🟩 Opção: Análise de sentimento em comentário
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c5aea59d-3c91-4944-b175-a3075974576e" alt="img" width="800"/>
 </p>
@@ -142,7 +149,22 @@ Abaixo, prints da tela do app gerado via streamlit, com as opções de gerar nuv
 
 --
 
-### 🟩 Resultado Negativo
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f77ecca0-bdef-4564-bf41-5e6f7decfcef" alt="img" width="800"/>
-</p>
+<br>
+
+## 📋 Principais Conclusões com base em toda a análise dos dados
+**Satisfação**  
+De acordo com os unigramas e e trigramas, podemos afirmar que a **maioria dos clientes ficou satisfeita com o serviço de entrega e qualidade dos produtos**.  
+De maneira geral, a maior das avaliações (positivas e negativas) são relativas à entrega e qualidade dos produtos. Focar na agilidade de entrega pode ser um ponto crucial.
+
+--
+
+**Comentários**  
+Após a remoção de valores nulos, temos que cerca de 9.000 avaliações com 1 estrela e pouco mais de 20.000 com 5 estrelas, o que indica:
+- Aproximadamente **36% dos clientes que deram 5 estrelas escreveram um comentário**.
+- Aproximadamente **77% dos clientes que deram 1 estrela escrevem um comentário**. Um cliente é mais propenso a comentar quando está insatisfeito com o produto.
+
+--
+
+**Palavras por comentário**  
+A maioria dos comentários tem **até 10 palavras, com pico no intervalo 2-5 palavras**. Como vimos nos trigramas, 3 palavras já são suficientes para entender o sentimento do cliente. Seria interessante, na seção de avaliações, **pedir um mínimo de 5 palavras para estimar o cliente a deixar seu comentário**, mesmo que curto.
+
