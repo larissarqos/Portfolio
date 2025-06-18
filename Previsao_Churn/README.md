@@ -9,9 +9,7 @@
 <br>
 
 ## 📃 Contexto
-
-Empresas que operam com planos mensais (como operadoras, serviços de assinatura, academias etc.) enfrentam o desafio constante de **reter clientes**. Antecipar o risco de churn permite ações preventivas mais eficazes, como ofertas personalizadas ou campanhas de engajamento.  
-Este projeto tem como objetivo **prever o churn de clientes** com base em informações contratuais, comportamentais e financeiras, utilizando **algoritmos de Machine Learning** e uma **interface desenvolvida em Streamlit**.
+Nesse projeto, vamos criar um modelo de previsão de churn de clientes com base em seu perfil, informações contratuais e financeiras, utilizando algoritmos de Machine Learning. A análise dos dados e o modelo preditivo podem ser usados para entender os perfis com maior possibilidade de churn, melhorando estratégias em campanhas de marketing, bem como otimização de produtos e serviços com maior quantidade de cancelamentos.
 
 ***
 
@@ -19,106 +17,124 @@ Este projeto tem como objetivo **prever o churn de clientes** com base em inform
 
 ## 🛠️ Tecnologias e Ferramentas Utilizadas
 **Python**
-- **Pandas, Numpy** – Manipulação de dados
-- **Scikit-learn** – Pré-processamento, modelagem, avaliação
-- **Imbalanced-learn (SMOTE)** – Balanceamento de classes
-- **Joblib** – Serialização do modelo
-- **Streamlit** – Interface interativa para previsão
-- **Excel / CSV** – Entrada e saída de dados
+- **Manipulação de dados -** Pandas, Numpy
+- **Visualização -** Matplotlib, Seaborn
+- **Balanceamento -** Imbalanced-learn (SMOTE)
+- **Machine Learning -** Scikit-learn (KNeighborsClassifier)
 
 ***
 
 <br>
 
-## 🎯 Objetivo
+## 📋 Metodologia: CRISP-DM
 
-Desenvolver um projeto completo de machine learning capaz de:
-- **Analisar dados históricos** de clientes
-- **Identificar padrões de evasão**
-- **Prever o churn futuro**
-- Disponibilizar essas previsões de forma acessível via **aplicativo web**
+A estrutura do projeto segue a metodologia CRISP-DM (Cross Industry Standard Process for Data Mining), composta por 6 etapas:
+  1. Entendimento do Negócio
+  2. Entendimento dos Dados
+  3. Preparação dos Dados
+  4. Modelagem
+  5. Avaliação do Modelo
+  6. Deploy
 
-***
+---
 
 <br>
 
-## 🧱 Estrutura do Projeto
+### 📌 Entendimento do Negócio
+O objetivo principal é **gerar previsões de churn com base em dados dos clientes**. Os insights extraídos servirão para:
 
-#### 🔸 Entendimento dos dados
-#### 🔸 Engenharia de Atributos
-#### 🔸 Pré-processamento
-#### 🔸 Modelagem
-#### 🔸 Deploy com Streamlit
-#### 🔸 Produto Final
+- Prever o churn de acordo com o perfil dos cliente
+- Dar suporte à tomada de decisões em campanhas de retenção de clientes
+- Dar suporte a decisões de melhoria de produto e serviço.
 
-***
+---
 
 <br>
 
 ### 📌 Entendimento dos Dados
-- Análise de variáveis como idade, tempo de contrato, pagamentos, pontuação etc.
-- Identificação de valores ausentes e outliers.
+O conjunto de dados contém informações sobre:
+- Dados dos clientes
+- Dados do tipo de plano assinado
+- Dados relacionados ao pagamento do plano
 
-***
+Durante a exploração inicial, observamos:
+- Mais de 90% das assinaturas é de duração 48 meses
+- Mais de 60% das assinaturas é do plano básico (30 CANAIS HD)
+- A maior parte das aquisições do serviço se deu pelo site. Aquisições por vendendor são menores e possuem maior taxa de cancelamentos
+- Dado o período avaliado, a taxa de churn é de quase 26%
+
+---
 
 <br>
 
-### 📌 Engenharia de Atributos
-- Conversão de variáveis categóricas com `LabelEncoder`.
-- Criação de nova variável **NIVEL_PAGAMENTO**, com base na quantidade de parcelas pagas.
+### 📌 Preparação dos Dados
+As principais foram:
 
-***
+- Tratamento e remoção de valores nulos
+- Tratamento de outliers
+- Redefinição de index
+- Engenharia de atributos
 
-<br>
-
-### 📌 Pré-processamento
-- Imputação de valores nulos com mediana ou valores padrão.
-- Correção de valores inconsistentes (ex: parcelas pagas acima do contrato).
-- Padronização dos dados com `StandardScaler`.
-
-***
+---
 
 <br>
 
 ### 📌 Modelagem
+
+- Codificação de variáveis categóricas (convertê-las em numéricas)
+- Balanceamento das variáveis
+- Separação de dados entre treino e teste
+- Padronização dos dados
 - Modelo escolhido: **K-Nearest Neighbors (KNN)**
-- Balanceamento da base com **SMOTE** para lidar com a classe minoritária (`CHURN = 1`).
-- Avaliação com **accuracy** e outras métricas.
-  
-***
+
+---
 
 <br>
 
-### 📌 Deploy com Streamlit
-- Criação de um app interativo onde o usuário:
-  - Faz upload de um CSV com os dados de clientes.
-  - Visualiza a prévia dos dados.
-  - Gera previsões com um clique.
-  - Baixa um arquivo Excel com o resultado.
+### 📌 Avaliação
+A avaliação do modelo KNN, variando o valor de k entre 3 e 9 para identificar o melhor desempenho na classificação dos dados, resultou em:
 
-***
+| Valor de k | Acurácia |
+|------------|----------|
+| k = 3      | 97,69%   |
+| k = 5      | 97,38%   |
+| k = 7      | 97,20%   |
+| k = 9      | 97,03%   |
 
 <br>
 
-## ✅ Resultado Final
+**O que isso significa?**   
+O melhor desempenho foi obtido com **k = 3**, indicando que uma vizinhança menor resultou em maior capacidade de generalização para esse conjunto de dados. No geral, todos os valores de k testados apresentaram acurácias elevadas e consistentes, acima de 95%.
 
-### 🟩 Tela inicial do app
+---
 
+<br>
+
+### 📌 Deploy
+O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite:
+- Gerar um arquivo .xlsx com previsão de churn para cada cliente, a partir de arquivo .csv com seus dados. 
+
+<br>
+
+### Prints do produto final:
+
+#### 🟩 Tela inicial do app
 <p align="center">
   <img src="https://github.com/user-attachments/assets/55fae0d8-3c6c-4455-b7c1-4e07b5198ccb" alt="img" width="800"/>
 </p>
 
-***
+--
 
 <br>
 
-### 🟩 Após upload do arquivo .csv
+
+#### 🟩 Após upload do arquivo .csv
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e2e7baaf-ddfb-40ef-a869-bf0199f7204a" alt="img" width="800"/>
 </p>
 
-***
+--
 
 <br>
 
@@ -128,9 +144,10 @@ Desenvolver um projeto completo de machine learning capaz de:
   <img src="https://github.com/user-attachments/assets/f3eb135e-a6e3-407c-af8e-44cd0e9a689c" alt="img" width="800"/>
 </p>
 
-***
+--
 
 <br>
+
 
 ### 🟩 Previsão pronta para baixar
 
@@ -138,9 +155,10 @@ Desenvolver um projeto completo de machine learning capaz de:
   <img src="https://github.com/user-attachments/assets/2c248359-f106-45eb-9a0f-fe5af234f9ac" alt="img" width="800"/>
 </p>
 
-***
+--
 
 <br>
+
 
 ### 🟩 Arquivo final
 Em anexo, está arquivo gerado com as previsões: *previsoes_churn.xlsx*. A coluna **CHURN_PREVISTO** contém as previsões, sendo:
