@@ -123,7 +123,7 @@ O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite
 
 #### Prints do produto final:
 
-#### 🟩 Opção gerar nuvem de palavras
+#### 🟩 Opção: Gerar nuvem de palavras
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0d613918-de8f-48cd-9a9e-b16303a9801b" alt="img" width="800"/>
@@ -149,7 +149,7 @@ O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite
 
 -- 
 
-#### 🟩 Opção: Análise de sentimento em comentário
+#### 🟩 Opção: Analisar comentário
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c5aea59d-3c91-4944-b175-a3075974576e" alt="img" width="800"/>
 </p>
@@ -159,6 +159,13 @@ O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite
 #### 🟩 Resultado Positivo
 <p align="center">
   <img src="https://github.com/user-attachments/assets/db9e9c44-6b67-47b2-8482-3f42c7771788" alt="img" width="800"/>
+</p>
+
+--
+
+#### 🟩 Resultado Negativo
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aa92cbc1-d8c5-4e5d-9425-15a52183c695" alt="img" width="800"/>
 </p>
 
 --
