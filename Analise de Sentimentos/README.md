@@ -107,9 +107,8 @@ Avaliação do modelo com as seguintes métricas:
 <br>
 
 **O que isso significa?** 
-O modelo apresenta excelente desempenho, com precisão de previsões e recall equilibrados. Erra um pouco mais ao ao confundir uma frase negativa como se fosse positiva. Sujeito a melhorias futuras com aplicação de outros algortimos, como Random Forest ou SVM.
- Erra mais ao confundir uma frase negativa como se fosse positiva (o que pode ser um problema, dependendo do seu uso final).
- 
+O modelo apresenta excelente desempenho, com precisão de previsões e recall equilibrados. Erra um pouco mais ao ao confundir uma frase negativa como se fosse positiva. Modelo será otimizado em versões futuras, com aplicação de outros algortimos, como Random Forest ou SVM, a fim de avaliar e melhorar sua performance.
+
 ---
 
 
@@ -166,7 +165,7 @@ O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite
 
 <br><br>
 
-### 📋 Principais conclusões com base em toda a análise dos dados
+### 📑 Principais conclusões com base em toda a análise dos dados
 **Satisfação**  
 De acordo com os unigramas e e trigramas, podemos afirmar que a **maioria dos clientes ficou satisfeita com o serviço de entrega e qualidade dos produtos**.  
 De maneira geral, a maior das avaliações (positivas e negativas) são relativas à entrega e qualidade dos produtos. Focar na agilidade de entrega pode ser um ponto crucial.
