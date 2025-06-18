@@ -36,7 +36,7 @@ A estrutura do projeto segue a metodologia CRISP-DM (Cross Industry Standard Pro
   5. Avaliação do Modelo
   6. Deploy
 
-***
+---
 
 <br>
 
@@ -75,6 +75,9 @@ As principais foram:
 - Redefinição de index
 - Engenharia de atributos
 
+---
+
+<br>
 
 ### 📌 Modelagem
 
