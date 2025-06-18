@@ -42,9 +42,9 @@ A estrutura do projeto segue a metodologia CRISP-DM (Cross Industry Standard Pro
 ### 📌 Entendimento do Negócio
 O objetivo principal é **classificar avaliações de clientes como positivas ou negativas**, utilizando o texto fornecido nos comentários. Os insights extraídos servirão para:
 
-- Identificar fatores de satisfação e insatisfação.
-- Apoiar decisões de melhoria de produto e serviço.
-- Automatizar o monitoramento de reputação da marca.
+- Identificar fatores de satisfação e insatisfação
+- Apoiar decisões de melhoria de produto e serviço
+- Automatizar o monitoramento de reputação da marca
 
 ---
 
@@ -52,15 +52,15 @@ O objetivo principal é **classificar avaliações de clientes como positivas ou
 
 ### 📌 Entendimento dos Dados
 O conjunto de dados contém informações sobre:
-- Avaliações de clientes.
-- Títulos e textos dos comentários.
-- Notas atribuídas (de 1 a 5 estrelas).
+- Avaliações de clientes
+- Títulos e textos dos comentários
+- Notas atribuídas (de 1 a 5 estrelas)
 
 Durante a exploração inicial, observamos:
 
-- Muitos valores ausentes em comentários e títulos.
-- Apenas 41% dos clientes deixaram algum texto.
-- Clientes insatisfeitos (nota 1) tendem mais a comentar do que os satisfeitos (nota 5).
+- Muitos valores ausentes em comentários e títulos
+- Apenas 41% dos clientes deixaram algum texto
+- Clientes insatisfeitos (nota 1) tendem mais a comentar do que os satisfeitos (nota 5)
 
 ---
 
@@ -70,11 +70,11 @@ Durante a exploração inicial, observamos:
 
 As principais etapas de limpeza e preparação foram:
 
-- Remoção de valores nulos.
-- Redefinição de índices.
-- Tokenização e vetorização de textos com `CountVectorizer`.
-- Geração de unigramas e trigramas para análise de frequência.
-- Criação de variável alvo binária com base nas notas de score: Notas 4 e 5 = 1, Positivo; Notas 1 e 2 = 0, Negativo.
+- Remoção de valores nulos
+- Redefinição de índices
+- Tokenização e vetorização de textos com `CountVectorizer`
+- Geração de unigramas e trigramas para análise de frequência
+- Criação de variável alvo binária com base nas notas de score: Notas 4 e 5 = 1, Positivo; Notas 1 e 2 = 0, Negativo
 
 ---
 
@@ -83,9 +83,9 @@ As principais etapas de limpeza e preparação foram:
 ### 📌 Modelagem
 
 - Modelo escolhido: **Regressão Logística**
-- Vetorização dos dados com `CountVectorizer`.
-- Separação entre treino e teste.
-- Treinamento da máquina preditiva com os textos processados.
+- Vetorização dos dados com `CountVectorizer`
+- Separação entre treino e teste
+- Treinamento da máquina preditiva com os textos processados
 
 ---
 
@@ -111,11 +111,11 @@ O modelo apresenta excelente desempenho, com precisão de previsões e recall eq
 
 ---
 
-
 <br>
 
 ### 📌 Deploy
 O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite:
+
 - Gerar de nuvem de palavras a partir de arquivo .csv com avaliações, permitindo uma visão rápida dos principais pontos comentados em novas avaliações.
 - Análise de sentimento com base em comentário, retornando sentimento previsto (Positivo ou Negativo).
 
