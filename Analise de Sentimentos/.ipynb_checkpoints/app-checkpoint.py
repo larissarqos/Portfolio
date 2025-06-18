@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 import nltk
 import re
 
-# --- Pré-processamento de texto ---
+# - Pré-processamento de texto
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 stopwords_pt = set(stopwords.words('portuguese'))
@@ -19,22 +19,22 @@ def limpar_texto(texto):
     palavras = [p for p in palavras if p not in stopwords_pt]
     return ' '.join(palavras)
 
-# --- Carregamento do modelo e vetor ---
+# -- Carregamento do modelo e vetor
 modelo = joblib.load('modelo_logistico.pkl')
 vetor = joblib.load('vetor_countvectorizer.pkl')
 
-# --- Sidebar ---
+# -- Sidebar
 st.sidebar.title("Menu")
 opcao = st.sidebar.radio("Escolha uma opção:", ["Gerar Nuvem de Palavras", "Analisar Avaliação"])
 
-# --- Título e descrição ---
+# -- Título e descrição do app
 st.markdown("<h1 style='text-align: center;'>💬 Análise de Sentimentos</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'><i>App de análise de sentimentos em avaliações de produtos</i></p>", unsafe_allow_html=True)
 st.divider()
 
-# --- Opção: Ver nuvens de palavras ---
+# -- Opção: Ver nuvens de palavras
 if opcao == "Gerar Nuvem de Palavras":
-    st.markdown("Faça o upload de um arquivo .csv com avaliações para gerar as nuvens de palavras.")
+    st.markdown("Faça o upload de um arquivo .csv com avaliações para gerar a nuvem de palavras")
     arquivo = st.file_uploader("Fazer upload do arquivo CSV", type=["csv"])
 
     if arquivo is not None:
@@ -53,7 +53,7 @@ if opcao == "Gerar Nuvem de Palavras":
         if st.button("Gerar Nuvem de Palavras"):
             from sklearn.feature_extraction.text import CountVectorizer
 
-            stopwords_pt_lista = list(stopwords_pt)  # converte para lista
+            stopwords_pt_lista = list(stopwords_pt)
 
             def gerar_ngrams(textos, n=3):
                 vectorizer = CountVectorizer(ngram_range=(1, n), stop_words=stopwords_pt_lista)
@@ -73,11 +73,13 @@ if opcao == "Gerar Nuvem de Palavras":
             st.pyplot(fig)
 
 
-# --- Opção: Analisar Avaliação Manualmente ---
+# -- Opção: Analisar Avaliação
 elif opcao == "Analisar Avaliação":
     st.markdown("<h4>Digite uma avaliação para análise</h4>", unsafe_allow_html=True)
-    frase = st.text_input("", placeholder="Exemplo: Gostei muito do produto, chegou rápido e bem embalado.")
+    frase = st.text_input("", placeholder="Exemplo: Gostei muito do produto, chegou rápido e bem embalado")
+    
     st.markdown("")
+    
     if st.button("Analisar") and frase:
         frase_limpa = limpar_texto(frase)
         frase_vetor = vetor.transform([frase_limpa])
