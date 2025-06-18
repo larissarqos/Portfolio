@@ -48,6 +48,8 @@ O objetivo principal é **classificar avaliações de clientes como positivas ou
 
 ---
 
+<br>
+
 ### 📌 Entendimento dos Dados
 O conjunto de dados contém informações sobre:
 - Avaliações de clientes.
@@ -62,7 +64,9 @@ Durante a exploração inicial, observamos:
 
 ---
 
-## 📌 Preparação dos Dados
+<br>
+
+### 📌 Preparação dos Dados
 
 As principais etapas de limpeza e preparação foram:
 
@@ -74,7 +78,9 @@ As principais etapas de limpeza e preparação foram:
 
 ---
 
-## 📌 Modelagem
+<br>
+
+### 📌 Modelagem
 
 - Modelo escolhido: **Regressão Logística**
 - Vetorização dos dados com `CountVectorizer`.
@@ -83,7 +89,9 @@ As principais etapas de limpeza e preparação foram:
 
 ---
 
-## 📌 Avaliação
+<br>
+
+### 📌 Avaliação
 
 Avaliação do modelo com as seguintes métricas:
 
@@ -96,22 +104,27 @@ Avaliação do modelo com as seguintes métricas:
    [ 228 5089]]
   ```
 
+<br>
+
 **O que isso significa?** 
 O modelo apresenta excelente desempenho, com precisão de previsões e recall equilibrados. Erra um pouco mais ao ao confundir uma frase negativa como se fosse positiva. Sujeito a melhorias futuras com aplicação de outros algortimos, como Random Forest ou SVM.
  Erra mais ao confundir uma frase negativa como se fosse positiva (o que pode ser um problema, dependendo do seu uso final).
  
 ---
 
-## 📌 Deploy
+
+<br>
+
+### 📌 Deploy
 O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite:
 - Gerar de nuvem de palavras a partir de arquivo .csv com avaliações, permitindo uma visão rápida dos principais pontos comentados em novas avaliações.
 - Análise de sentimento com base em comentário, retornando sentimento previsto (Positivo ou Negativo).
 
 <br>
 
-### Prints do produto final:
+#### Prints do produto final:
 
-### 🟩 Opção gerar nuvem de palavras
+#### 🟩 Opção gerar nuvem de palavras
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0d613918-de8f-48cd-9a9e-b16303a9801b" alt="img" width="800"/>
@@ -119,14 +132,16 @@ O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite
 
 --
 
-### 🟩 Após inserção do arquivo
+<br>
+
+#### 🟩 Após inserção do arquivo
 <p align="center">
   <img src="https://github.com/user-attachments/assets/52d9aae6-432b-4597-b663-b15fc26e946f" alt="img" width="800"/>
 </p>
 
 -- 
 
-### 🟩 Nuvem Gerada
+#### 🟩 Nuvem Gerada
 <p align="center">
   <img src="https://github.com/user-attachments/assets/62b75633-7084-4924-8f25-35818ee9d945" alt="img" width="800"/>
 </p>
@@ -135,23 +150,23 @@ O deploy do modelo foi feito com Streamlit. A interface intuitiva do app permite
 
 -- 
 
-### 🟩 Opção: Análise de sentimento em comentário
+#### 🟩 Opção: Análise de sentimento em comentário
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c5aea59d-3c91-4944-b175-a3075974576e" alt="img" width="800"/>
 </p>
 
 --
 
-### 🟩 Resultado Positivo
+#### 🟩 Resultado Positivo
 <p align="center">
   <img src="https://github.com/user-attachments/assets/db9e9c44-6b67-47b2-8482-3f42c7771788" alt="img" width="800"/>
 </p>
 
 --
 
-<br>
+<br><br>
 
-## 📋 Principais Conclusões com base em toda a análise dos dados
+### 📋 Principais conclusões com base em toda a análise dos dados
 **Satisfação**  
 De acordo com os unigramas e e trigramas, podemos afirmar que a **maioria dos clientes ficou satisfeita com o serviço de entrega e qualidade dos produtos**.  
 De maneira geral, a maior das avaliações (positivas e negativas) são relativas à entrega e qualidade dos produtos. Focar na agilidade de entrega pode ser um ponto crucial.
