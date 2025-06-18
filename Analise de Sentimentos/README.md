@@ -18,8 +18,8 @@ Este projeto tem como objetivo aplicar técnicas de Processamento de Linguagem N
 - **Manipulação e análise de dados -** Pandas, Numpy
 - **Visualização -** Matplotlib, Seaborn
 - **Processamento de texto -** nltk, re, wordcloud
-- **Machine Learning -** scikit-learn (Logistic Regression, Random Forest)
-- **Deploy -** – Streamlit
+- **Machine Learning -** Scikit-learn (Logistic Regression, Random Forest)
+- **Deploy -** Streamlit
 
 ***
 
