@@ -5,7 +5,7 @@
 </p>
 
 ## 📃 Contexto
-Analisaremos a taxa de churn de diferentes serviços de streaming (dados fictícios): Amazon, Disney, Globoplay, HBO, Netflix e Telecine. Aplicaremos a Análise de Cohort para entender essas taxas considerando os fatores: campanha (promocional, reativação ou recorrente) e tipo de assinatura (mensal ou anual). 
+Analisaremos a taxa de churn de diferentes serviços de streaming (dados fictícios): Amazon, Disney, Globoplay, HBO, Netflix e Telecine. Aplicaremos a Análise de Cohort para entender essas taxas considerando os fatores: produto, campanha (promocional, reativação ou recorrente) e tipo de assinatura (mensal ou anual). 
 
 ***
 
