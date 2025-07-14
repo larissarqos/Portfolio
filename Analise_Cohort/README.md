@@ -5,33 +5,47 @@
 </p>
 
 ## 📃 Contexto
-Analisaremos a taxa de churn de diferentes serviços de streaming (dados fictícios): Amazon, Disney, Globoplay, HBO, Netflix e Telecine. Aplicaremos a Análise de Cohort para entender essas taxas considerando os fatores: produto, campanha (promocional, reativação ou recorrente) e tipo de assinatura (mensal ou anual). 
+Analisaremos a taxa de churn de diferentes serviços de streaming (dados fictícios): Amazon, Disney, Globoplay, HBO, Netflix e Telecine. Aplicaremos a Análise de Cohort para entender essas taxas considerando os fatores: produto, campanha (promocional, reativação ou recorrente) e tipo de assinatura (mensal ou anual).  
+
+*Caso não conheça a análise de Cohort, segue artigo claro e objetivo sobre o método, [leia aqui](https://medium.com/@larissarqos17/an%C3%A1lise-de-cohort-54404c813786).*
 
 ***
 
 <br>
 
 ## 🛠️ Ferramentas e Métodos Utilizados
+### 🔸 Ferramentas
+- Excel (fonte de dados)
 - Power BI (DAX, Power Query, gráficos)
-- Excel (fonte dos dados)
-- Modelagem dos dados
+
+### 🔸 Métodos
+- Limpeza e tratamento de dados
+- Análise exploratória
 - Engenharia de atributos
-- Business Intelligence
-  
-***
-
-<br>
-
-## 🎯 Objetivos
-O objetivo da análise é entender as taxas de churn e retenção dos serviços de assinatura considerando os fatores campanha e tipo de assinatura. Identificaremos os principais influenciadores das taxas de cancelamento e possíveis medidas  para aumentar a retenção. Começaremos com uma análise exploratória dos dados e então responderemos a uma série de perguntas de negócio.
+- Modelagem de dados
+- Métodos estatísticos
 
 ***
 
 <br>
 
-##  🧱 Estrutura do Projeto
-### 🗄 Banco de dados
-Abaixo o dicionário dos dados:
+## 🎯 Objetivo
+O objetivo do projeto é identificar os principais influenciadores das taxas de cancelamento e sugerir medidas que diminuam o churn e aumentem a retenção. 
+***
+
+<br>
+
+## 🧱 Estrutura do Projeto
+#### 🔸 Dicionário dos Dados
+#### 🔸 Análise Exploratória
+#### 🔸 Respondendo a Perguntas de Negócio
+#### 🔸 Recomendações Estratégicas
+
+***
+
+<br>
+
+### 🗄 Dicionário dos Dados
 
 | Coluna | Descrição |
 |--------|-----------|
@@ -46,7 +60,7 @@ Abaixo o dicionário dos dados:
 
 <br>
 
-### 🔎 Análise Exploratória
+### 🔎 Análise exploratória dos dados
 
 #### 📌 1. Qual o período avaliado?**  
 Fevereiro de 2022 a abril de 2023
