@@ -125,9 +125,9 @@ As assinaturas de julho/2022 e janeiro/2023 contaram com uma maior taxa de cance
 
 <br>
 
-### 📈 Recomendações Estratégicas
-De maneira geral, a taxa de churn dos serviços é altíssima, quase 40%. O foco das recomendações será a redução dos cancelamentos . 
-**Cenário ideal:** Mais próxima de 0 possível, 5% é um valor aceitável.
+### 🚀 Recomendações Estratégicas
+De maneira geral, a taxa de churn dos serviços é altíssima, quase 40%. O foco das recomendações será a redução dos cancelamentos. 
+**Cenário ideal:** Mais próxima de 0 possível, 15% é um valor aceitável, dada a atual taxa de cancelamentos.
 
 #### 🟦 Incentivar as assinaturas cujas campanha e período contaram com maior retenção
 - **Aumento das assinaturas do tipo anual e recorrente -**  Um programa de membros pode ajudar a unir essas duas opções, ofertando vantagens e conteúdos exclusivos para os clientes optarem por esse serviço.
