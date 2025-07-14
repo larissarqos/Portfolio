@@ -1,4 +1,4 @@
-<h1 align="center"> 📊 Análise de Cohort - Assinaturas de Streaming</h1>
+<h1 align="center">Análise de Cohort - Assinaturas de Streaming</h1>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f16da559-1b01-4336-9b37-e722e27eb3e7" alt="analise_vendas" width="1100"/>
