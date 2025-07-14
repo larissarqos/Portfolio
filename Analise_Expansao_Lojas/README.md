@@ -9,7 +9,9 @@
 <br>
 
 ## 📃 Contexto 
-Uma rede fictícia de cafeterias deseja ampliar seus negócios, abrindo novas filiais em cidades promissoras. A rede deseja saber os melhores locais e produtos para abertura de suas novas lojas, com base no rendimento de suas vendas em lojas já existentes.
+Uma rede fictícia de cafeterias deseja ampliar seus negócios, abrindo novas filiais em cidades promissoras. A rede deseja saber os melhores locais e produtos para abertura de suas novas lojas, com base no rendimento de suas vendas em lojas já existentes.  
+
+Você pode consultar o dashboard no Power BI em anexo (Dashboard/analise_expansao_lojas.pbix), ou através do [link](https://app.powerbi.com/reportEmbed?reportId=91638f07-f3be-41a1-b64e-c2ed39bbf946&autoAuth=true&ctid=50ac28df-71ea-410c-add9-15b6381786db).
 
 ***
 
