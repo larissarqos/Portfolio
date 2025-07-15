@@ -9,7 +9,7 @@
 ## 📃 Contexto 
 Neste projeto, faremos a **análise de performance de funcionários e suas avaliações em relação à satisfação com a empresa**. O objetivo é ajudar o setor de RH a **detectar que fatores estão relacionados ao baixo desempenho e satisfação** no ambiente de trabalho e que **medidas podem ser adotadas para melhorar esses resultados**. Começaremos com uma **análise exploratória dos dados**, partindo para a **captura de insights** úteis para nossa análise e por fim uma série de **recomendações** com base nas conclusões obtidas.
 
-Você pode consultar o dashboard no Power BI em anexo (Dashboard/Dashboard_RH.pbix), ou através do [link](https://app.powerbi.com/reportEmbed?reportId=34679753-5135-46d0-b0a4-fd2906a8b876&autoAuth=true&ctid=50ac28df-71ea-410c-add9-15b6381786db).
+Você pode consultar o dashboard no Power BI através do anexo (Dashboard/Dashboard_RH.pbix) ou do [link](https://app.powerbi.com/reportEmbed?reportId=34679753-5135-46d0-b0a4-fd2906a8b876&autoAuth=true&ctid=50ac28df-71ea-410c-add9-15b6381786db).
 
 ***
 
