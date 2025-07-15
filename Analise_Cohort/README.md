@@ -7,7 +7,7 @@
 ## 📃 Contexto
 Analisaremos a taxa de churn de diferentes serviços de streaming (dados fictícios): Amazon, Disney, Globoplay, HBO, Netflix e Telecine. Aplicaremos a Análise de Cohort para entender essas taxas considerando os fatores: produto, campanha (promocional, reativação ou recorrente) e tipo de assinatura (mensal ou anual).
 
-Você pode consultar o dashboard no Power BI em anexo (analise_cohort.pbix), ou através do [link](https://app.powerbi.com/reportEmbed?reportId=91638f07-f3be-41a1-b64e-c2ed39bbf946&autoAuth=true&ctid=50ac28df-71ea-410c-add9-15b6381786db).
+Você pode consultar o dashboard no Power BI através do anexo (analise_cohort.pbix), ou do [link](https://app.powerbi.com/reportEmbed?reportId=91638f07-f3be-41a1-b64e-c2ed39bbf946&autoAuth=true&ctid=50ac28df-71ea-410c-add9-15b6381786db).
 
 *Caso não conheça a análise de Cohort, segue artigo claro e objetivo sobre o método, [leia aqui](https://medium.com/@larissarqos17/an%C3%A1lise-de-cohort-54404c813786).*
 
