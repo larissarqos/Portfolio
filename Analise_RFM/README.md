@@ -1,4 +1,4 @@
-<h1 align="center"> Análise de Vendas e Segmentação de Clientes com Técnica RFM </h1>
+<h1 align="center">Análise de Vendas e Segmentação de Clientes com RFM </h1>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f4ad952c-19f4-4e2a-a73c-94b8aa0facdc" alt="img" width="1100"/>
@@ -9,6 +9,8 @@
 
 ## 📃 Contexto 
 Nesse projeto, analisaremos os dados de uma empresa fictícia para identificar seu desempenho nas vendas e compreender o perfil de seus clientes através da análise RFM. Os insights obtidos servirão de base para a sugestão de uma série de medidas estratégicas que poderão ser adotadas pela corporação a fim de melhorar sua receita e o relacionamento com seus consumidores.  
+
+Você pode consultar o dashboard no Power BI em anexo (Dashboard/Analise_Vendas_RFM.pbix), ou através do [link](https://app.powerbi.com/reportEmbed?reportId=e3566a93-5630-42d5-a6b0-7fc40c1b9dae&autoAuth=true&ctid=50ac28df-71ea-410c-add9-15b6381786db).
 
 *Caso não conheça a análise RFM, segue artigo claro e objetivo sobre o método, [leia aqui](https://medium.com/@larissarqos17/an%C3%A1lise-rfm-defini%C3%A7%C3%A3o-aplica%C3%A7%C3%A3o-e-import%C3%A2ncia-8c7e8d911cdd).*
 
